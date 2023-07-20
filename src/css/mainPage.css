@@ -1,0 +1,149 @@
+body {
+  height: 100%;
+  /* Забезпечуємо що body завжди займатиме 100% висоти html */
+  margin: 0;
+  /* Обнуляємо внутрішні відступи */
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.logo {
+  width: auto;
+  display: flex;
+}
+.header-logo-img {
+  width: 80px;
+  height: 80px;
+  background-color: firebrick;
+}
+
+.header-logo-text {
+  font-family: ROBOTO system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.header-tel {
+  text-decoration: none;
+  font-family: ROBOTO system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.header-inst {
+  text-decoration: none;
+  font-family: ROBOTO system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+main {
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.6),
+      rgba(46, 47, 66, 0.6)
+    ),
+    url(../img/cat.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #454040;
+}
+/* Стилі для картинки */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-title {
+  margin: 80px 0px 0px;
+  text-align: left;
+  color: #99997b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 50px 0;
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  display: block;
+}
+.main-text {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #99997b;
+}
+.main-description {
+  font-family: 'Roboto' sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(69, 64, 64);
+}
+.choise {
+  margin: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.div-one,
+.div-two,
+.div-three {
+  width: 33.33%; /* Задаємо фіксовану ширину для кожного блоку */
+}
+
+.div-one img,
+.div-two img,
+.div-three img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.breed-select {
+  margin: 10px 0px;
+  display: none;
+}
+
+.cat-info {
+  display: block;
+}
+.error {
+  display: none;
+}
+.loader {
+  display: none;
+}

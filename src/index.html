@@ -1,14 +1,74 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <titleCatBreedExploers</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&family=Roboto+Slab:wght@200;700&display=swap');
+    </style>
   </head>
+
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <a class="header-logo" href="./index.html"
+            ><img src="./img/cat.png" class="header-logo-img" alt="cat" />
+            <p class="header-logo-text">CatBreedExplorers</p></a
+          >
+        </div>
+
+        <div class="header-contact">
+          <a href="tel:+38044123456" class="header-tel">+38 044 111 11 11</a>
+          <a href="" class="header-inst">Instagram</a>
+        </div>
+      </header>
+      <main class="main">
+        <h1 class="main-title">CatBreedExplorers</h1>
+        <h2 class="main-text">Welcome to the page for choosing a cat breed</h2>
+      </main>
+    </div>
+    <!-- картинка з текстом і селектом -->
+    <div class="choise">
+      <div class="div-one">
+        <img
+          src="./img/img2.akspic.ru-koshki_sfinksy-datskij_dog-gavana_braun-polosatyj_kot-belyj_kot-3200x4800.jpg"
+          alt=""
+        />
+      </div>
+      <div class="div-two">
+        <img
+          src="./img/img3.akspic.ru-poroda_koshek-morda-kotenok-poroda-russkaya_golubaya-2181x2560.jpg"
+          alt=""
+        />
+      </div>
+      <div class="div-three">
+        <p class="main-description">
+          No matter whether you know exactly which breeds you like or if you
+          need advice, we will be happy to help you find a four-legged friend
+          who will become your perfect companion. You can find more information
+          about the breeds here.
+        </p>
+        <div class="">
+          <select class="breed-select"></select>
+          <p class="loader"></p>
+          <p class="error">
+            Oops! Something went wrong! Try reloading the page!
+          </p>
+          <div class="cat-info"></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <select class="breed-select"></select>
+      <p class="loader"></p>
+      <p class="error">Oops! Something went wrong! Try reloading the page!</p>
+      <div class="cat-info"></div>
+    </div>
+
+    <script src="index.js" type="module"></script>
   </body>
 </html>
